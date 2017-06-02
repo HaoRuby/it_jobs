@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+$white: #fff;
+$highlight: #d2674e;
+$dark: #22292e;
+$light: #edeff5;
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: $dark;
+}
+
+header {
+	padding: 3rem 0;
+	.logo {
+		float: left;
+		text-transform: uppercase;
+		font-size: 1.25rem;
+		font-weight: 700;
+		letter-spacing: 5px;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	nav {
+		float: right;
+		ul {
+			list-style: none;
+			margin: 0;
+			li {
+				display: inline;
+				margin-left: 2.5rem;
+				a {
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+//button
+.btn {
+	transition: background .4s ease-in-out;
+}
+.btn-highlight {
+	background: $highlight;
+	border: none;
+	color: $white;
+	&:hover {
+		background: darken($highlight, 8%);
+		color: $white;
+	}
+}
+.btn-light {
+	background: $light;
+	border: none;
+	&:hover {
+		background: darken($light, 8%);
+	}
+}
+
+
+
+// import
+@import 'normalize';
+@import 'welcome';

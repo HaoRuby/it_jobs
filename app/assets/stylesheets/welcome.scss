@@ -1,0 +1,33 @@
+#welcome {
+	background-image: image-url('welcome-bg.png');
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	text-align: center;
+	header {
+		.logo {
+			color: $white;
+		}
+		nav ul li a {
+			color: $white;
+			transition: color .4s ease-in-out;
+			&:hover {
+				color: darken($light, 25%);
+				text-decoration: none;
+			}
+		}
+	}
+	h1 {
+		color: $light;
+		font-size: 3rem;
+		font-weight: 300;
+		letter-spacing: 2px;
+		margin: 7rem 0 2rem 0;
+		line-height: 1.5;
+	}
+	.btn {
+		margin: 0 1.25rem 0 1.25rem;
+		font-size: 1rem;
+		padding: 1rem 2.5rem;
+	}
+}
